@@ -7,9 +7,8 @@
 
 #ifndef Rabbit_h
 #define Rabbit_h
-#include "Arena.h"
 #include "globals.h"
-class Arena;
+
 
 class Rabbit
 {

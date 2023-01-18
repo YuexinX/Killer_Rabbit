@@ -6,6 +6,7 @@
 //
 
 #include "Player.h"
+#include "Arena.h"
 #include <iostream>
 #include <string>
 ///////////////////////////////////////////////////////////////////////////
@@ -46,6 +47,7 @@ std::string Player::dropPoisonedCarrot()
     if (m_arena->getCellStatus(m_row, m_col) == HAS_POISON)
         return "There's already a poisoned carrot at this spot.";
     m_arena->setCellStatus(m_row, m_col, HAS_POISON);
+    m_arena->history().record(m_row, m_col);
     return "A poisoned carrot has been dropped.";
 }
 

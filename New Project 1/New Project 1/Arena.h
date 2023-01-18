@@ -7,12 +7,10 @@
 
 #ifndef Arena_hpp
 #define Arena_hpp
-#include "Rabbit.h"
+
 #include "globals.h"
-#include "Player.h"
+#include "History.h"
 #include <string>
-class Player;
-class Rabbit;
 
 class Arena
 {
@@ -29,7 +27,7 @@ class Arena
     int     getCellStatus(int r, int c) const;
     int     numberOfRabbitsAt(int r, int c) const;
     void    display(std::string msg) const;
-
+    History& history();
       // Mutators
     void setCellStatus(int r, int c, int status);
     bool addRabbit(int r, int c);
@@ -44,7 +42,7 @@ class Arena
     Rabbit* m_rabbits[MAXRABBITS];
     int     m_nRabbits;
     int     m_turns;
-
+    History m_history;
       // Helper functions
     void checkPos(int r, int c, std::string functionName) const;
     bool isPosInBounds(int r, int c) const;

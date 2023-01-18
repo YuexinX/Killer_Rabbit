@@ -7,7 +7,6 @@
 
 #ifndef Player_hpp
 #define Player_hpp
-#include "Arena.h"
 #include "globals.h"
 #include <string>
 

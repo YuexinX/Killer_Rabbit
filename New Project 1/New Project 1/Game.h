@@ -7,7 +7,7 @@
 
 #ifndef Game_hpp
 #define Game_hpp
-#include "Arena.h"
+#include "globals.h"
 #include <string>
 
 class Game
@@ -25,6 +25,7 @@ class Game
 
       // Helper functions
     std::string takePlayerTurn();
+    int g_callHistory = 0;
 };
 
 bool recommendMove(const Arena& a, int r, int c, int& bestDir);

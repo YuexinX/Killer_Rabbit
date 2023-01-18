@@ -5,11 +5,13 @@
 //  Created by Time Thief on 1/14/23.
 //
 #include "globals.h"
+#include "Arena.h"
 #include <random>
 #include <utility>
 #include <cstdlib>
 #include <cctype>
 #include <iostream>
+#include <string>
 ///////////////////////////////////////////////////////////////////////////
 //  Auxiliary function implementation
 ///////////////////////////////////////////////////////////////////////////
@@ -126,6 +128,7 @@ void clearScreen()
 
 void clearScreen()  // will just write a newline in an Xcode output window
 {
+    using namespace std;
     static const char* term = getenv("TERM");
     if (term == nullptr  ||  strcmp(term, "dumb") == 0)
         cout << endl;

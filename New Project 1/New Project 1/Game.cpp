@@ -6,6 +6,10 @@
 //
 
 #include "Game.h"
+#include "History.h"
+#include "Arena.h"
+#include "Player.h"
+#include "Rabbit.h"
 #include <iostream>
 #include <string>
 
@@ -69,11 +73,14 @@ std::string Game::takePlayerTurn()
 {
     for (;;)
     {
-        std::cout << "Your move (n/e/s/w/c or nothing): ";
+        std::cout << "Your move (n/e/s/w/c/h or nothing): ";
         std::string playerMove;
         getline(std::cin, playerMove);
+        
 
         Player* player = m_arena->player();
+        History& gameHistory = m_arena->history();
+        g_callHistory = 0;
         int dir;
 
         if (playerMove.size() == 0)
@@ -86,9 +93,21 @@ std::string Game::takePlayerTurn()
         else if (playerMove.size() == 1)
         {
             if (tolower(playerMove[0]) == 'c')
+            {
                 return player->dropPoisonedCarrot();
+            }
+            
             else if (decodeDirection(playerMove[0], dir))
                 return player->move(dir);
+        }
+        if (playerMove.size() == 1 && tolower(playerMove[0])== 'h')
+        {
+            gameHistory.display();
+            std::cout<<"Press enter to continue.";
+            std::string enter;
+            getline(std::cin, enter);
+            g_callHistory = 1;
+            return "";
         }
         std::cout << "Player move must be nothing, or 1 character n/e/s/w/c." << std::endl;
     }
@@ -106,8 +125,11 @@ void Game::play()
         m_arena->display(msg);
         if (player->isDead())
             break;
-        m_arena->moveRabbits();
-        m_arena->display(msg);
+        if(g_callHistory != 1)
+        {
+            m_arena->moveRabbits();
+            m_arena->display(msg);
+        }
     }
     if (player->isDead())
         std::cout << "You lose." << std::endl;

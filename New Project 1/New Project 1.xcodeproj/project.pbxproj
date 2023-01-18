@@ -10,7 +10,7 @@
 		A624BE0829736BCD00BE02BC /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A624BE0729736BCD00BE02BC /* main.cpp */; };
 		A624BE10297379FC00BE02BC /* Rabbit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A624BE0E297379FC00BE02BC /* Rabbit.cpp */; };
 		A624BE1329737A0E00BE02BC /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A624BE1129737A0E00BE02BC /* Player.cpp */; };
-		A624BE1629737A2200BE02BC /* Hiistory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A624BE1429737A2200BE02BC /* Hiistory.cpp */; };
+		A624BE1629737A2200BE02BC /* History.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A624BE1429737A2200BE02BC /* History.cpp */; };
 		A624BE1929737A2E00BE02BC /* Arena.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A624BE1729737A2E00BE02BC /* Arena.cpp */; };
 		A624BE1C29737A3B00BE02BC /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A624BE1A29737A3B00BE02BC /* Game.cpp */; };
 		A624BE1E29737A5B00BE02BC /* utilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A624BE1D29737A5B00BE02BC /* utilities.cpp */; };
@@ -35,8 +35,8 @@
 		A624BE0F297379FC00BE02BC /* Rabbit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Rabbit.h; sourceTree = "<group>"; };
 		A624BE1129737A0E00BE02BC /* Player.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
 		A624BE1229737A0E00BE02BC /* Player.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
-		A624BE1429737A2200BE02BC /* Hiistory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Hiistory.cpp; sourceTree = "<group>"; };
-		A624BE1529737A2200BE02BC /* Hiistory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hiistory.h; sourceTree = "<group>"; };
+		A624BE1429737A2200BE02BC /* History.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = History.cpp; sourceTree = "<group>"; };
+		A624BE1529737A2200BE02BC /* History.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = History.h; sourceTree = "<group>"; };
 		A624BE1729737A2E00BE02BC /* Arena.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Arena.cpp; sourceTree = "<group>"; };
 		A624BE1829737A2E00BE02BC /* Arena.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Arena.h; sourceTree = "<group>"; };
 		A624BE1A29737A3B00BE02BC /* Game.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
@@ -80,8 +80,8 @@
 				A624BE0F297379FC00BE02BC /* Rabbit.h */,
 				A624BE1129737A0E00BE02BC /* Player.cpp */,
 				A624BE1229737A0E00BE02BC /* Player.h */,
-				A624BE1429737A2200BE02BC /* Hiistory.cpp */,
-				A624BE1529737A2200BE02BC /* Hiistory.h */,
+				A624BE1429737A2200BE02BC /* History.cpp */,
+				A624BE1529737A2200BE02BC /* History.h */,
 				A624BE1729737A2E00BE02BC /* Arena.cpp */,
 				A624BE1829737A2E00BE02BC /* Arena.h */,
 				A624BE1A29737A3B00BE02BC /* Game.cpp */,
@@ -149,7 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A624BE1629737A2200BE02BC /* Hiistory.cpp in Sources */,
+				A624BE1629737A2200BE02BC /* History.cpp in Sources */,
 				A624BE0829736BCD00BE02BC /* main.cpp in Sources */,
 				A624BE1929737A2E00BE02BC /* Arena.cpp in Sources */,
 				A624BE1C29737A3B00BE02BC /* Game.cpp in Sources */,
