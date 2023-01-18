@@ -9,6 +9,8 @@
 #define Player_hpp
 #include "Arena.h"
 #include "globals.h"
+#include <string>
+
 class Player
 {
   public:
@@ -21,8 +23,8 @@ class Player
     bool isDead() const;
 
       // Mutators
-    string dropPoisonedCarrot();
-    string move(int dir);
+    std::string dropPoisonedCarrot();
+    std::string move(int dir);
     void   setDead();
 
   private:

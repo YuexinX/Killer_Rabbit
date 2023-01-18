@@ -11,6 +11,8 @@
 #include "globals.h"
 #include "Player.h"
 #include <string>
+class Player;
+class Rabbit;
 
 class Arena
 {

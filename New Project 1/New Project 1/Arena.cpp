@@ -205,12 +205,12 @@ bool Arena::isPosInBounds(int r, int c) const
     return (r >= 1  &&  r <= m_rows  &&  c >= 1  &&  c <= m_cols);
 }
 
-void Arena::checkPos(int r, int c, string functionName) const
+void Arena::checkPos(int r, int c, std::string functionName) const
 {
     if (!isPosInBounds(r, c))
     {
-        cout << "***** " << "Invalid arena position (" << r << ","
-             << c << ") in call to " << functionName << endl;
+        std::cout << "***** " << "Invalid arena position (" << r << ","
+             << c << ") in call to " << functionName << std::endl;
         exit(1);
     }
 }

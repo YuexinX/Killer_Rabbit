@@ -27,4 +27,6 @@ class Game
     std::string takePlayerTurn();
 };
 
+bool recommendMove(const Arena& a, int r, int c, int& bestDir);
+
 #endif /* Game_hpp */
