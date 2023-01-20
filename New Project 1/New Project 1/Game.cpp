@@ -103,10 +103,9 @@ std::string Game::takePlayerTurn()
         if (playerMove.size() == 1 && tolower(playerMove[0])== 'h')
         {
             gameHistory.display();
-            std::cout<<"Press enter to continue.";
-            std::string enter;
-            getline(std::cin, enter);
             g_callHistory = 1;
+            std::cout<<"Press enter to continue.";
+            std::cin.ignore(10000,'\n');
             return "";
         }
         std::cout << "Player move must be nothing, or 1 character n/e/s/w/c." << std::endl;
